@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1><strong><%= @game.title %></strong></h1>
+  <h1><strong><%= link_to(@game.title, @game.url, :target => "_blank") %></strong></h1>
 </p>
 
 <p>

@@ -25,6 +25,7 @@
     <% @games.each do |game| %>
       <tr>
         <td><%= game.title %></td>
+        <td><%= game.url %></td>
         <td><%= game.rating %></td>
         <td><%= link_to("Game Review", game.review_url, :target => "_blank") %></td>
         <td><%= game.platforms %></td>
