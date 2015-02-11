@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating: 1
+  review_url: MyString
+  platforms: MyString
+  genres: MyString
+  time_to_beat_main: 1.5
+  time_to_beat_100: 1.5
+  time_to_beat_url: MyString
+  price: 1.5
+  price_url: MyString
+  trailer_url: MyString
+  summary: MyText
+
+two:
+  title: MyString
+  rating: 1
+  review_url: MyString
+  platforms: MyString
+  genres: MyString
+  time_to_beat_main: 1.5
+  time_to_beat_100: 1.5
+  time_to_beat_url: MyString
+  price: 1.5
+  price_url: MyString
+  trailer_url: MyString
+  summary: MyText

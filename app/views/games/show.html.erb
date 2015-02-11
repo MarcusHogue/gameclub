@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h1><strong><%= @game.title %></strong></h1>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @game.rating %>
+</p>
+
+<p>
+  <strong>Platforms:</strong>
+  <%= @game.platforms %>
+</p>
+
+<p>
+  <strong>Genres:</strong>
+  <%= @game.genres %>
+</p>
+
+<p>
+  <strong>Time to Beat (Main Story to 100%):</strong>
+  <%= @game.time_to_beat_main %> - <%= @game.time_to_beat_100 %> Hours
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @game.price %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @game.summary %>
+</p>
+
+<p>
+  <strong>Useful Links:</strong>
+  <ul>
+  <li><%= link_to("Game Review", @game.review_url, :target => "_blank") %></li>
+  <li><%= link_to("How Long To Beat", @game.time_to_beat_url, :target => "_blank") %></li>
+  <li><%= link_to("Buy Game", @game.price_url, :target => "_blank") %></li>
+  <li><%= link_to("Game Trailer", @game.trailer_url, :target => "_blank") %></li>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
